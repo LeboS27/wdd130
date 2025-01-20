@@ -1,46 +1,68 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
+:root {
+    --heading-background-color: #f06;
+    --heading-text-color: #333;
+    --heading-font: 'Montserrat', Helvetica, sans-serif;
+    --nav-background-color: darkblue;
+    --nav-link-color: white;
+    --padding: 1rem;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+    --aside-width: 20em;
+    --aside-background-color: #eee;
+    --main-img-border-color: steelblue;
+    --box-shadow-color: gray;
+    --default-padding: 10px;
 }
 
-nav a{
-    color: white;
+/* Navigation styles */
+nav {
+    background-color: var(--nav-background-color);
+    padding: var(--default-padding);
+}
+
+nav a {
+    color: var(--nav-link-color);
     display: block;
     padding: 20px;
 }
 
-h1{
-    color: darkblue;
+/* Heading styles */
+h1 {
+    color: var(--nav-background-color);
 }
+
+/* Paragraph styles */
 p {
-    padding: 0;
+    padding: var(--default-padding);
 }
+
+/* Aside styles */
 aside {
-    width: 20em;
-    margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1em;
-    background-color: #eee;
-    color: #333;
+    width: var(--aside-width);
+    margin: var(--padding);
+    border: var(--border);
+    padding: var(--padding);
+    background-color: var(--aside-background-color);
+    color: var(--heading-text-color);
     text-align: center;
 }
+
 aside img {
     width: 200px;
     height: auto;
 }
+
+/* Footer styles */
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
+    margin-top: var(--padding);
+    border-top: var(--border);
     text-align: center;
 }
-main img{
+
+/* Main image styles */
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--main-img-border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-p{
-    padding: 10px;
+    box-shadow: 0 0 30px var(--box-shadow-color);
 }
