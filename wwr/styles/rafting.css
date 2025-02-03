@@ -2,6 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    color: #333;
 }
 
 header {
@@ -82,4 +84,152 @@ footer {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+/* New Styles for Contact Page */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    color: #6c63ff;
+    margin-bottom: 10px;
+}
+
+.company-details {
+    margin-bottom: 20px;
+}
+
+.company-details p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.google-map {
+    margin: 20px auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.employee-profiles {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.employee-profiles h2 {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.employees figure {
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.employees img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.employees figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.contact-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form .radio-group label {
+    font-weight: normal;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5a52e0;
+}
+
+footer a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
