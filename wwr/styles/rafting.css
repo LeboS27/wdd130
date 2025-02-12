@@ -6,6 +6,15 @@ body {
     color: #333;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -232,4 +241,58 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Trips Section */
+.trips {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.trips h2 {
+    text-align: center;
+    color: #005f73;
+}
+
+.trip-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.trip {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.trip p {
+    text-align: justify;
+}
+
+/* Trip Table */
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trip-table th, .trip-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: #005f73;
+    color: white;
 }
